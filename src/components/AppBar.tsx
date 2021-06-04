@@ -73,7 +73,7 @@ function AppBar(): JSX.Element {
                                             )}
                                             {chainId === ChainId.MAINNET && (
                                                 <NavLink id={`sushibar-nav-link`} to={'/sushibar'}>
-                                                    {i18n._(t`SushiBar`)}
+                                                    {i18n._(t`ApeBar`)}
                                                 </NavLink>
                                             )}
                                             {chainId &&
@@ -360,7 +360,7 @@ function AppBar(): JSX.Element {
                                     )}
                                 {chainId === ChainId.MAINNET && (
                                     <NavLink id={`stake-nav-link`} to={'/sushibar'}>
-                                        {i18n._(t`SushiBar`)}
+                                        {i18n._(t`ApeBar`)}
                                     </NavLink>
                                 )}
                                 {chainId === ChainId.MAINNET && (
