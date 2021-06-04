@@ -139,7 +139,7 @@ export default function StakeCard({ sushiBalance, xSushiBalance }: StakeCardProp
 
     const [approvalState, approve] = useApproveCallback(
         new TokenAmount(
-            new Token(1, '0x6B3595068778DD592e39A122f4f5a5cF09C90fE2', 18, 'SUSHI', ''),
+            new Token(1, '0x6B3595068778DD592e39A122f4f5a5cF09C90fE2', 18, 'APE', ''),
             parsedInput.value.toString()
         ),
         BAR_ADDRESS[1]
@@ -160,7 +160,7 @@ export default function StakeCard({ sushiBalance, xSushiBalance }: StakeCardProp
                         }}
                     >
                         <div className={activeTab === 0 ? activeTabStyle : inactiveTabStyle}>
-                            <p>{i18n._(t`Stake SUSHI`)}</p>
+                            <p>{i18n._(t`Stake APE`)}</p>
                         </div>
                     </div>
                     <div
@@ -178,10 +178,10 @@ export default function StakeCard({ sushiBalance, xSushiBalance }: StakeCardProp
 
                 <div className="flex justify-between items-center w-full mt-6">
                     <p className="text-large md:text-h5 font-bold text-high-emphesis">
-                        {activeTab === 0 ? i18n._(t`Stake SUSHI`) : i18n._(t`Unstake`)}
+                        {activeTab === 0 ? i18n._(t`Stake APE`) : i18n._(t`Unstake`)}
                     </p>
                     <div className="border-gradient-r-pink-red-light-brown-dark-pink-red border-transparent border-solid border rounded-3xl px-4 md:px-3.5 py-1.5 md:py-0.5 text-high-emphesis text-xs font-medium md:text-caption md:font-normal">
-                        {`1 xSUSHI = ${xSushiPerSushi.toFixed(4)} SUSHI`}
+                        {`1 xAPE = ${xSushiPerSushi.toFixed(4)} APE`}
                     </div>
                 </div>
 
@@ -207,7 +207,7 @@ export default function StakeCard({ sushiBalance, xSushiBalance }: StakeCardProp
                                     input ? 'text-high-emphesis' : 'text-secondary'
                                 }`}
                             >
-                                {`${input ? input : '0'} ${activeTab === 0 ? '' : 'x'}SUSHI`}
+                                {`${input ? input : '0'} ${activeTab === 0 ? '' : 'x'}APE`}
                             </p>
                         </div>
                         <div className="flex items-center text-secondary text-caption2 md:text-caption">
