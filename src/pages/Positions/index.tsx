@@ -14,10 +14,10 @@ import { useLingui } from '@lingui/react'
 
 const mock = {
     transactions: [
-        'Swap 0.1234 ETH for 32.1245 SUSHI',
-        'Swap 0.1235 ETH for 32.1245 SUSHI',
-        'Swap 0.1236 ETH for 32.1245 SUSHI',
-        'Swap 0.1237 ETH for 32.1245 SUSHI'
+        'Swap 0.1234 ETH for 32.1245 APE',
+        'Swap 0.1235 ETH for 32.1245 APE',
+        'Swap 0.1236 ETH for 32.1245 APE',
+        'Swap 0.1237 ETH for 32.1245 APE'
     ]
 }
 
@@ -30,7 +30,7 @@ export default function Positions() {
     return (
         <>
             <Helmet>
-                <title>{i18n._(t`Positions`)} | Sushi</title>
+                <title>{i18n._(t`Positions`)} | Ape</title>
             </Helmet>
 
             {/* <div className="w-full max-w-2xl">

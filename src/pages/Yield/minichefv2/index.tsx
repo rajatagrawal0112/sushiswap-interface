@@ -42,8 +42,8 @@ export default function Yield(): JSX.Element {
     return (
         <>
             <Helmet>
-                <title>{i18n._(t`Yield`)} | Sushi</title>
-                <meta name="description" content="Farm SUSHI by staking LP (Liquidity Provider) tokens" />
+                <title>{i18n._(t`Yield`)} | APE</title>
+                <meta name="description" content="Farm APE by staking LP (Liquidity Provider) tokens" />
             </Helmet>
             <div className="container max-w-4xl mx-auto px-0 sm:px-4">
                 <Card
@@ -166,7 +166,7 @@ const TokenBalance = ({ farm }: any) => {
                         <div className="text-sm sm:text-base font-semibold">
                             {farm && farm.liquidityPair.token0.symbol + '-' + farm.liquidityPair.token1.symbol}
                         </div>
-                        <div className="hidden md:block text-sm sm:text-base ml-4 text-gray-500">{'SUSHI & MATIC'}</div>
+                        <div className="hidden md:block text-sm sm:text-base ml-4 text-gray-500">{'APE & MATIC'}</div>
                         <div className="text-gray-500 text-sm sm:text-base text-right">
                             {formattedNum(farm.tvl, true)}
                         </div>
@@ -213,7 +213,7 @@ const TokenBalance = ({ farm }: any) => {
                             </div>
                             <div className="flex flex-col pl-2 space-y-1">
                                 <div className="text-gray-500 text-xs">
-                                    {formattedNum(farm.sushiRewardPerDay)} SUSHI / day
+                                    {formattedNum(farm.sushiRewardPerDay)} APE / day
                                 </div>
                                 <div className="text-gray-500 text-xs">
                                     {formattedNum(farm.secondaryRewardPerDay)} MATIC / day
@@ -335,7 +335,7 @@ const UserBalance = ({ farm }: any) => {
                         <div className="flex justify-end items-center">
                             <div>
                                 <div className="text-right">{formattedNum(farm.pendingSushi)} </div>
-                                <div className="text-secondary text-right">SUSHI</div>
+                                <div className="text-secondary text-right">APE</div>
                             </div>
                         </div>
                     </div>
@@ -380,7 +380,7 @@ const UserBalance = ({ farm }: any) => {
                         <div className="flex justify-end items-center">
                             <div>
                                 <div className="text-right">{formattedNum(farm.pendingSushi)} </div>
-                                <div className="text-secondary text-right">SUSHI</div>
+                                <div className="text-secondary text-right">APE</div>
                             </div>
                         </div>
                     </div>

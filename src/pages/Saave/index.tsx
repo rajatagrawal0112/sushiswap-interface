@@ -46,8 +46,8 @@ export default function Saave() {
     return (
         <>
             <Helmet>
-                <title>Saave | Sushi</title>
-                <meta name="description" content="Migrate SUSHI -> xSUSHI -> axSUSHI" />
+                <title>Saave | Ape</title>
+                <meta name="description" content="Migrate APE -> xAPE -> axAPE" />
             </Helmet>
             <PageWrapper>
                 <VoteCard>
@@ -61,7 +61,7 @@ export default function Saave() {
                             <RowBetween>
                                 <TYPE.white fontSize={14} color={theme.text2}>
                                     {i18n._(
-                                        t`Stake your SUSHI into xSUSHI for ~5% APY. Deposit your xSUSHI into Aave as aXSUSHI to earn collateral interest and borrowing power. All in one click.`
+                                        t`Stake your APE into xAPE for ~5% APY. Deposit your xAPE into Aave as aXAPE to earn collateral interest and borrowing power. All in one click.`
                                     )}
                                 </TYPE.white>
                             </RowBetween>
@@ -86,7 +86,7 @@ export default function Saave() {
                             <RowBetween>
                                 <TYPE.white fontSize={14} color={theme.text2}>
                                     {i18n._(
-                                        t`To withdraw into SUSHI, go to Aave and remove axSUSHI as collateral and then to SushiBar to unstake. A full unwind will be avaialble soon.`
+                                        t`To withdraw into APE, go to Aave and remove axAPE as collateral and then to APEBar to unstake. A full unwind will be avaialble soon.`
                                     )}
                                 </TYPE.white>
                             </RowBetween>
@@ -106,7 +106,7 @@ export default function Saave() {
                                 cornerRadiusBottomNone={true}
                             />
                             <AXSushiBalancePanel
-                                label={'aXSUSHI Balance'}
+                                label={'aXAPE Balance'}
                                 disableCurrencySelect={true}
                                 id="ax-token-balance"
                                 cornerRadiusTopNone={true}

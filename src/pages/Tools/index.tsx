@@ -86,7 +86,7 @@ export default function Pool() {
     return (
         <>
             <Helmet>
-                <title>{i18n._(t`Tools`)} | Sushi</title>
+                <title>{i18n._(t`Tools`)} | Ape</title>
             </Helmet>
             <PageWrapper>
                 <SwapPoolTabs active={'pool'} />
@@ -95,7 +95,7 @@ export default function Pool() {
                         <AutoColumn gap="md">
                             <RowBetween>
                                 <TYPE.white fontWeight={600} color={theme.text1}>
-                                    {i18n._(t`Helpful Sushi Tools`)}
+                                    {i18n._(t`Helpful Ape Tools`)}
                                 </TYPE.white>
                             </RowBetween>
                             <RowBetween>
@@ -148,7 +148,7 @@ export default function Pool() {
                                     <RowFixed>
                                         {/* <DoubleCurrencyLogo currency0={currency0} currency1={currency1} margin={true} size={20} /> */}
                                         <Text fontWeight={500} fontSize={14}>
-                                            {i18n._(t`One click SUSHI → xSUSHI → aXSUSHI`)}
+                                            {i18n._(t`One click Ape → xApe → aXApe`)}
                                         </Text>
                                     </RowFixed>
                                     <RowFixed>

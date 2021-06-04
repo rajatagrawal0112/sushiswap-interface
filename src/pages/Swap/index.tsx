@@ -303,10 +303,10 @@ export default function Swap() {
     return (
         <>
             <Helmet>
-                <title>{i18n._(t`Swap`)} | Sushi</title>
+                <title>{i18n._(t`Swap`)} | Ape</title>
                 <meta
                     name="description"
-                    content="Sushi allows for swapping of ERC20 compatible tokens across multiple networks"
+                    content="Ape allows for swapping of ERC20 compatible tokens across multiple networks"
                 />
             </Helmet>
             <TokenWarningModal
@@ -639,7 +639,7 @@ export default function Swap() {
                             <span className="text-high-emphesis font-normal" style={{ lineHeight: 1.3, maxWidth: 250 }}>
                                 <Trans>
                                     Pour a hot bowl of MISO, the new <span className="font-bold">token launchpad</span>{' '}
-                                    from SUSHI
+                                    from Ape
                                 </Trans>
                             </span>
                             <div style={{ maxWidth: 195 }}>

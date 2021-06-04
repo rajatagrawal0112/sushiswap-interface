@@ -155,7 +155,7 @@ export default function ClaimModal() {
         <>
             {' '}
             <Helmet>
-                <title>{i18n._(t`Vesting`)} | Sushi</title>
+                <title>{i18n._(t`Vesting`)} | Ape</title>
             </Helmet>
             <PageWrapper>
                 <>
@@ -218,9 +218,9 @@ export default function ClaimModal() {
                                 <CardSection gap="sm">
                                     <RowBetween>
                                         <TYPE.white fontWeight={500} color={theme.text1}>
-                                            {i18n._(t`Your Claimable SUSHI this Week`)}
+                                            {i18n._(t`Your Claimable APE this Week`)}
                                         </TYPE.white>
-                                        <QuestionHelper text="Your Vested SUSHI will be released each week for the next 6 months. The amount released each week is determined by your historical farming rewards. You do not need to harvest each week as unclaimed amounts from each week will continue to accrue onto the next." />
+                                        <QuestionHelper text="Your Vested APE will be released each week for the next 6 months. The amount released each week is determined by your historical farming rewards. You do not need to harvest each week as unclaimed amounts from each week will continue to accrue onto the next." />
                                     </RowBetween>
                                     {/* <div style={{ display: 'flex', alignItems: 'baseline' }}> */}
                                     <div style={{ alignItems: 'baseline' }}>
@@ -231,7 +231,7 @@ export default function ClaimModal() {
                                             <TYPE.white fontWeight={700} fontSize={14} color={theme.text3}>
                                                 {totalLocked ? (
                                                     i18n._(
-                                                        t`Historical Total Locked: ${formattedNum(totalLocked)} SUSHI`
+                                                        t`Historical Total Locked: ${formattedNum(totalLocked)} APE`
                                                     )
                                                 ) : (
                                                     <Dots>{i18n._(t`Historical Total Locked: Fetching Total`)}</Dots>
@@ -261,7 +261,7 @@ export default function ClaimModal() {
                                         {pendingTreasurySignature ? (
                                             <Dots>{i18n._(t`Pending Treasury Transfer`)}</Dots>
                                         ) : (
-                                            <> {claimConfirmed ? i18n._(t`Claimed`) : i18n._(t`Claim SUSHI`)}</>
+                                            <> {claimConfirmed ? i18n._(t`Claimed`) : i18n._(t`Claim APE`)}</>
                                         )}
 
                                         {attempting && <Loader stroke="white" style={{ marginLeft: '10px' }} />}
@@ -272,7 +272,7 @@ export default function ClaimModal() {
                                 <CardSection gap="md">
                                     <RowBetween style={{ marginBottom: '5px' }}>
                                         <TYPE.white fontWeight={500} color={theme.text1}>
-                                            {i18n._(t`Things you can do with your SUSHI`)}
+                                            {i18n._(t`Things you can do with your APE`)}
                                         </TYPE.white>
                                     </RowBetween>
                                     <LightCard
@@ -285,12 +285,12 @@ export default function ClaimModal() {
                                                 <AutoRow>
                                                     <AutoRow marginBottom="2px">
                                                         <TYPE.body fontWeight={500}>
-                                                            {i18n._(t`Stake SUSHI for xSUSHI`)}
+                                                            {i18n._(t`Stake APE for xAPE`)}
                                                         </TYPE.body>
                                                     </AutoRow>
                                                     <AutoRow>
                                                         <TYPE.darkGray fontSize=".75rem">
-                                                            {t`Gain governance rights with xSUSHI and earn 5% APR (0.05% of
+                                                            {t`Gain governance rights with xAPE and earn 5% APR (0.05% of
                                                             all swaps from all chains)`}
                                                         </TYPE.darkGray>
                                                     </AutoRow>
@@ -314,7 +314,7 @@ export default function ClaimModal() {
                                                     </AutoRow>
                                                     <AutoRow>
                                                         <TYPE.darkGray fontSize=".75rem">
-                                                            {t`Stake into xSUSHI add collateral as axSUSHI on Aave all in
+                                                            {t`Stake into xAPE add collateral as axAPE on Aave all in
                                                             one click`}
                                                         </TYPE.darkGray>
                                                     </AutoRow>
@@ -329,13 +329,13 @@ export default function ClaimModal() {
                                                 <AutoRow>
                                                     <AutoRow marginBottom="2px">
                                                         <TYPE.body fontWeight={500}>
-                                                            {i18n._(t`Deposit SUSHI into BentoBox`)}
+                                                            {i18n._(t`Deposit APE into BentoBox`)}
                                                         </TYPE.body>
                                                     </AutoRow>
                                                     <AutoRow>
                                                         <TYPE.darkGray fontSize=".75rem">
                                                             {t`(COMING SOON) Accrue automatic yield through flash loans and
-                                                            SUSHI strategies`}
+                                                            APE strategies`}
                                                         </TYPE.darkGray>
                                                     </AutoRow>
                                                 </AutoRow>
