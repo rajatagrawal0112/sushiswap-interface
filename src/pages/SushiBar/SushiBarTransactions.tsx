@@ -16,9 +16,10 @@ const mock = {
 
 export default function SushiBarTransactions() {
     const theme = useContext(ThemeContext)
-    const addr = [, SUSHI[ChainId.BSC]?.address ?? '']
-    const sushiBalance = useTokenBalance(SUSHI[ChainId.MAINNET]?.address ?? '') || useTokenBalance(SUSHI[ChainId.KOVAN]?.address ?? '') || useTokenBalance(SUSHI[ChainId.BSC]?.address ?? '') || useTokenBalance(SUSHI[ChainId.BSC_TESTNET]?.address ?? '')
+    const addr = [,SUSHI[ChainId.BSC]?.address ?? '']
+    const sushiBalance = useTokenBalance(SUSHI[ChainId.MAINNET]?.address ?? '')
     const xSushiBalance = useTokenBalance(XSUSHI?.address ?? '')
+
     const history = useHistory()
 
     return (
