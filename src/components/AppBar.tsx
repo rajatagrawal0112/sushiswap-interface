@@ -76,6 +76,21 @@ function AppBar(): JSX.Element {
                                                     {i18n._(t`ApeBar`)}
                                                 </NavLink>
                                             )}
+                                            {chainId === ChainId.KOVAN && (
+                                                <NavLink id={`sushibar-nav-link`} to={'/sushibar'}>
+                                                    {i18n._(t`ApeBar`)}
+                                                </NavLink>
+                                            )}
+                                            {chainId === ChainId.BSC && (
+                                                <NavLink id={`sushibar-nav-link`} to={'/sushibar'}>
+                                                    {i18n._(t`ApeBar`)}
+                                                </NavLink>
+                                            )}
+                                            {chainId === ChainId.BSC_TESTNET && (
+                                                <NavLink id={`sushibar-nav-link`} to={'/sushibar'}>
+                                                    {i18n._(t`ApeBar`)}
+                                                </NavLink>
+                                            )}
                                             {chainId &&
                                                 [ChainId.MAINNET, ChainId.KOVAN, ChainId.BSC, ChainId.MATIC].includes(
                                                     chainId
