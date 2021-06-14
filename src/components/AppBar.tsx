@@ -71,6 +71,24 @@ function AppBar(): JSX.Element {
                                                     {i18n._(t`Yield`)}
                                                 </NavLink>
                                             )}
+                                            {chainId && [ChainId.KOVAN, ChainId.MATIC].includes(chainId) && (
+                                                <NavLink id={`yield-nav-link`} to={'/yield'}>
+                                                    {i18n._(t`Yield`)}
+                                                </NavLink>
+                                            )}
+                                            {chainId && [ChainId.BSC, ChainId.MATIC].includes(chainId) && (
+                                                <NavLink id={`yield-nav-link`} to={'/yield'}>
+                                                    {i18n._(t`Yield`)}
+                                                </NavLink>
+                                            )}
+                                            {chainId && [ChainId.BSC_TESTNET, ChainId.MATIC].includes(chainId) && (
+                                                <NavLink id={`yield-nav-link`} to={'/yield'}>
+                                                    {i18n._(t`Yield`)}
+                                                </NavLink>
+                                            )}
+
+
+
                                             {chainId === ChainId.MAINNET && (
                                                 <NavLink id={`sushibar-nav-link`} to={'/sushibar'}>
                                                     {i18n._(t`ApeBar`)}
@@ -361,6 +379,21 @@ function AppBar(): JSX.Element {
                                         {i18n._(t`Yield`)}
                                     </NavLink>
                                 )}
+                                {chainId && [ChainId.KOVAN, ChainId.MATIC].includes(chainId) && (
+                                    <NavLink id={`yield-nav-link`} to={'/yield'}>
+                                        {i18n._(t`Yield`)}
+                                    </NavLink>
+                                )}
+                                {chainId && [ChainId.BSC, ChainId.MATIC].includes(chainId) && (
+                                    <NavLink id={`yield-nav-link`} to={'/yield'}>
+                                        {i18n._(t`Yield`)}
+                                    </NavLink>
+                                )}
+                                {chainId && [ChainId.BSC_TESTNET, ChainId.MATIC].includes(chainId) && (
+                                    <NavLink id={`yield-nav-link`} to={'/yield'}>
+                                        {i18n._(t`Yield`)}
+                                    </NavLink>
+                                )}
                                 {chainId &&
                                     [ChainId.MAINNET, ChainId.KOVAN, ChainId.BSC, ChainId.MATIC].includes(chainId) && (
                                         <NavLink id={`kashi-nav-link`} to={'/bento/kashi/lend'}>
@@ -374,6 +407,21 @@ function AppBar(): JSX.Element {
                                         </NavLink>
                                     )}
                                 {chainId === ChainId.MAINNET && (
+                                    <NavLink id={`stake-nav-link`} to={'/sushibar'}>
+                                        {i18n._(t`ApeBar`)}
+                                    </NavLink>
+                                )}
+                                {chainId === ChainId.KOVAN && (
+                                    <NavLink id={`stake-nav-link`} to={'/sushibar'}>
+                                        {i18n._(t`ApeBar`)}
+                                    </NavLink>
+                                )}
+                                {chainId === ChainId.BSC && (
+                                    <NavLink id={`stake-nav-link`} to={'/sushibar'}>
+                                        {i18n._(t`ApeBar`)}
+                                    </NavLink>
+                                )}
+                                {chainId === ChainId.BSC_TESTNET && (
                                     <NavLink id={`stake-nav-link`} to={'/sushibar'}>
                                         {i18n._(t`ApeBar`)}
                                     </NavLink>
