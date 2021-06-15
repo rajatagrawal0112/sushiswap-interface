@@ -177,5 +177,9 @@
     "license": "GPL-3.0-or-later",
     "dependencies": {
         "@lufycz/sushi-data": "^2.0.0-canary-21"
-    }
+    },
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/rajatagrawal0112/sushiswap-interface.git",
+    "author": "rajatagrawal0112 <rajatagrawal@questglt.org>"
 }

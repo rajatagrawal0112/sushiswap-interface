@@ -110,7 +110,7 @@ function AppBar(): JSX.Element {
                                                 </NavLink>
                                             )}
                                             {chainId &&
-                                                [ChainId.MAINNET, ChainId.KOVAN, ChainId.BSC, ChainId.MATIC].includes(
+                                                [ChainId.MAINNET, ChainId.KOVAN, ChainId.BSC, ChainId.MATIC,ChainId.BSC_TESTNET].includes(
                                                     chainId
                                                 ) && (
                                                     <NavLink id={`kashi-nav-link`} to={'/bento/kashi/lend'}>
@@ -118,7 +118,7 @@ function AppBar(): JSX.Element {
                                                     </NavLink>
                                                 )}
                                             {chainId &&
-                                                [ChainId.MAINNET, ChainId.KOVAN, ChainId.BSC, ChainId.MATIC].includes(
+                                                [ChainId.MAINNET, ChainId.KOVAN, ChainId.BSC, ChainId.MATIC,ChainId.BSC_TESTNET].includes(
                                                     chainId
                                                 ) && (
                                                     <NavLink id={`bento-nav-link`} to={'/bento'}>
@@ -395,13 +395,13 @@ function AppBar(): JSX.Element {
                                     </NavLink>
                                 )}
                                 {chainId &&
-                                    [ChainId.MAINNET, ChainId.KOVAN, ChainId.BSC, ChainId.MATIC].includes(chainId) && (
+                                    [ChainId.MAINNET, ChainId.KOVAN, ChainId.BSC, ChainId.MATIC,ChainId.BSC_TESTNET].includes(chainId) && (
                                         <NavLink id={`kashi-nav-link`} to={'/bento/kashi/lend'}>
                                             {i18n._(t`Kashi Lending`)}
                                         </NavLink>
                                     )}
                                 {chainId &&
-                                    [ChainId.MAINNET, ChainId.KOVAN, ChainId.BSC, ChainId.MATIC].includes(chainId) && (
+                                    [ChainId.MAINNET, ChainId.KOVAN, ChainId.BSC, ChainId.MATIC,ChainId.BSC_TESTNET].includes(chainId) && (
                                         <NavLink id={`bento-nav-link`} to={'/bento'}>
                                             {i18n._(t`BentoBox`)}
                                         </NavLink>
